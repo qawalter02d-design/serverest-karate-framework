@@ -1,7 +1,7 @@
 Feature: Eliminar usuario
 
 Background:
-    Given url baseUrl
+    Given url 'https://serverest.dev'
 
 Scenario: Delete usuario validando casos
 

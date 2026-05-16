@@ -1,7 +1,7 @@
 Feature: Update user
 
 Background:
-    Given url baseUrl
+    Given url 'https://serverest.dev'
     * def email = 'qa_' + java.util.UUID.randomUUID() + '@mail.com'
 
 Scenario: Update user successfully
