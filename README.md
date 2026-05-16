@@ -37,6 +37,8 @@ src/test/resources
 │   ├── getUsersSchema.json
 │   ├── updateUserSchema.json
 
+```
+
 ## ⚙️ Instalación y ejecución
 
 Clonar repositorio:
