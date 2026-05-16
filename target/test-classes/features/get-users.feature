@@ -1,7 +1,7 @@
 Feature: Listar usuarios
 
 Background:
-    Given url baseUrl 
+    Given url 'https://serverest.dev'
 
 Scenario: Listar usuarios y validar todo
 
