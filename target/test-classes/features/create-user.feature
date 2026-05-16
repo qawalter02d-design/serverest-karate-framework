@@ -2,6 +2,7 @@ Feature: Gestión de Usuarios en ServeRest
 
 Scenario: Crear un usuario exitosamente
 
+Background:
   Given url baseUrl
   And path '/usuarios'
 

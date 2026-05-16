@@ -1,5 +1,7 @@
 function fn() {
-  return {
-    baseUrl: 'https://serverest.dev'
-  };
+  var config = {};
+
+  config.baseUrl = 'https://serverest.dev';
+
+  return config;
 }
