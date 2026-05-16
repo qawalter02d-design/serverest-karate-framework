@@ -18,22 +18,23 @@ El objetivo del framework es demostrar una arquitectura base escalable para auto
 
 src/test/java
 ├── runners
-│   └── TestRunner.java
+│ └── TestRunner.java
 ├── utils
-│   └── TestData.java
+│ └── TestData.java
 ├── karate-config.js
 
 src/test/resources
 ├── features
-│   ├── create-user.feature
-│   ├── get-users.feature
-│   ├── get-user-by-id.feature
-│   ├── update-user.feature
-│   ├── delete-user.feature
+│ ├── create-user.feature
+│ ├── get-users.feature
+│ ├── get-user-by-id.feature
+│ ├── update-user.feature
+│ ├── delete-user.feature
+│
 ├── schemas
-│   ├── createUserSchema.json
-│   ├── getUsersSchema.json
-│   ├── updateUserSchema.json
+│ ├── createUserSchema.json
+│ ├── getUsersSchema.json
+│ ├── updateUserSchema.json
 
 ## ⚙️ Instalación y ejecución
 
