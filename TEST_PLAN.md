@@ -88,7 +88,7 @@ El sistema cumple con los criterios cuando:
 ---
 
 ## 📁 7. Estructura del Proyecto
-
+```
 serverest-karate-framework/
 │
 ├── .github/workflows/
