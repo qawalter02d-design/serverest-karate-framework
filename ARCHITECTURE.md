@@ -1,53 +1,55 @@
-# 🏗️ Architecture Document - ServeRest API Automation Framework
+# 🏗️ Documento de Arquitectura - Framework de Automatización API ServeRest
 
-## 📌 1. Overview
+## 📌 1. Descripción General
 
-This project implements an automated API testing framework using **Karate DSL**, designed to validate the ServeRest API (https://serverest.dev). The framework follows a modular, maintainable, and scalable architecture suitable for enterprise environments such as NTT Data / BCP.
+Este proyecto implementa un framework de automatización de pruebas de API utilizando **Karate DSL**, diseñado para validar la API pública ServeRest (https://serverest.dev).
 
-It is integrated with **GitHub Actions CI/CD pipeline** to ensure continuous validation of API quality.
+El framework sigue una arquitectura modular, mantenible y escalable, adecuada para entornos empresariales como NTT Data / BCP.
 
----
-
-## 🎯 2. Architecture Goals
-
-- Ensure scalability of test automation
-- Maintain clean separation of concerns
-- Enable easy maintenance of test cases
-- Support CI/CD integration
-- Improve reusability of test components
+Está integrado con **GitHub Actions (CI/CD)** para asegurar la ejecución continua de pruebas.
 
 ---
 
-## 🧱 3. High-Level Architecture
+## 🎯 2. Objetivos de la Arquitectura
 
-The framework follows a layered structure:
+- Garantizar escalabilidad del framework de automatización  
+- Mantener separación clara de responsabilidades  
+- Facilitar el mantenimiento de las pruebas  
+- Permitir integración con CI/CD  
+- Mejorar la reutilización de componentes  
+
+---
+
+## 🧱 3. Arquitectura de Alto Nivel
+
+El flujo del sistema es el siguiente:
 
 ```
 +-----------------------------+
-|      GitHub Actions CI      |
+|     GitHub Actions CI       |
 +-------------+---------------+
               |
               v
 +-----------------------------+
-|     Maven Build Layer      |
+|        Maven Build          |
 +-------------+---------------+
               |
               v
 +-----------------------------+
-|     Karate Test Layer      |
-|  (Feature Files + Runners) |
+|     Capa de Karate DSL      |
+| (Features + Runners)        |
 +-------------+---------------+
               |
               v
 +-----------------------------+
-|     API Under Test        |
-|   https://serverest.dev   |
+|       API bajo prueba       |
+|     https://serverest.dev   |
 +-----------------------------+
 ```
 
 ---
 
-## 📁 4. Project Structure
+## 📁 4. Estructura del Proyecto
 
 ```
 serverest-karate-framework/
@@ -81,122 +83,124 @@ serverest-karate-framework/
 
 ---
 
-## ⚙️ 5. Framework Components
+## ⚙️ 5. Componentes del Framework
 
 ### 5.1 Karate DSL
-Used for API automation testing with BDD-style syntax:
-- Feature files
-- Scenarios
-- Assertions
-- Schema validation
+Herramienta principal utilizada para automatización de pruebas API en estilo BDD.
+
+Permite:
+- Definir escenarios en lenguaje Gherkin
+- Ejecutar peticiones HTTP
+- Validar respuestas JSON
+- Realizar validaciones de schema
 
 ---
 
 ### 5.2 Maven
-Responsible for:
-- Dependency management
-- Test execution
-- Build lifecycle
-- Integration with Surefire plugin
+Responsable de:
+- Gestión de dependencias
+- Ejecución de pruebas
+- Ciclo de vida del build
+- Integración con Surefire Plugin
 
 ---
 
 ### 5.3 GitHub Actions (CI/CD)
 
-Automates execution pipeline:
+Automatiza el flujo de ejecución:
 
-1. Checkout repository
-2. Setup Java environment
-3. Execute Maven tests
-4. Run Karate scenarios
-5. Generate test reports
-
----
-
-## 🔄 6. Execution Flow
-
-```
-Developer Push
-      ↓
-GitHub Repository
-      ↓
-GitHub Actions Trigger
-      ↓
-Maven Build Execution
-      ↓
-Karate Test Execution
-      ↓
-API Validation (ServeRest)
-      ↓
-Test Report Generation
-```
+1. Checkout del repositorio  
+2. Configuración del entorno Java  
+3. Ejecución de Maven test  
+4. Ejecución de escenarios Karate  
+5. Generación de reportes  
 
 ---
 
-## 🧪 7. Test Strategy
+## 🔄 6. Flujo de Ejecución
 
-The framework covers:
+```
+Push del desarrollador
+        ↓
+Repositorio GitHub
+        ↓
+Ejecución de GitHub Actions
+        ↓
+Build con Maven
+        ↓
+Ejecución de pruebas Karate
+        ↓
+Validación contra API ServeRest
+        ↓
+Generación de reportes
+```
 
-### Functional Testing
+---
+
+## 🧪 7. Estrategia de Pruebas
+
+El framework cubre:
+
+### Pruebas funcionales
 - GET /usuarios
 - GET /usuarios/{id}
 - POST /usuarios
 - PUT /usuarios/{id}
 - DELETE /usuarios/{id}
 
-### Validation Types
-- HTTP status validation
-- JSON schema validation
-- Response body validation
-- Negative scenarios
+### Tipos de validación
+- Validación de códigos HTTP
+- Validación de respuestas JSON
+- Validación de schema
+- Escenarios negativos
 
 ---
 
-## 🔐 8. Environments
+## 🔐 8. Entornos
 
-| Environment | URL |
-|------------|-----|
-| QA / Test | https://serverest.dev |
+| Entorno | URL |
+|--------|-----|
+| QA / Pruebas | https://serverest.dev |
 
-No credentials are required (public API).
-
----
-
-## 📊 9. Reporting
-
-- Maven Surefire Reports
-- GitHub Actions Logs
-- Karate execution console output
+No se requieren credenciales (API pública).
 
 ---
 
-## 🚀 10. CI/CD Quality Gate
+## 📊 9. Reportes
 
-Pipeline is considered **SUCCESS** when:
-
-- All scenarios pass
-- No assertion failures
-- Build completes with exit code 0
-
-Failure conditions:
-
-- Any HTTP assertion mismatch
-- Schema validation error
-- API unreachable
+- Reportes de Maven Surefire  
+- Logs de ejecución en GitHub Actions  
+- Consola de Karate  
 
 ---
 
-## 🧠 11. Design Principles
+## 🚀 10. Quality Gate en CI/CD
 
-- Reusability of test scenarios
-- Separation of test data and logic
-- Maintainability through modular features
-- CI/CD integration first approach
-- Minimal hardcoding of data
+El pipeline se considera **EXITOSO** cuando:
+
+- Todos los tests pasan correctamente  
+- No hay errores de validación  
+- El build termina con código 0  
+
+Condiciones de falla:
+
+- Diferencias en status HTTP  
+- Fallos en schema  
+- API no disponible  
 
 ---
 
-## 👨‍💻 12. Maintainer
+## 🧠 11. Principios de Diseño
 
-QA Automation Engineer  
-Enterprise Practice Project (BCP / NTT Data style)
+- Reutilización de escenarios  
+- Separación de datos y lógica  
+- Mantenibilidad del framework  
+- Integración con CI/CD desde el inicio  
+- Evitar hardcode innecesario  
+
+---
+
+## 👨‍💻 12. Responsable
+
+Ingeniero de Automatización QA : Walter Enrique Diaz Castillo 
+Proyecto de práctica - Estilo empresarial (BCP / NTT Data)
