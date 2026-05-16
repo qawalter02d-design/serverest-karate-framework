@@ -27,7 +27,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 });
 </script>
 
-    <title>features.users</title>
+    <title>features.test</title>
   </head>
   <body>
     <div id="root-container">
@@ -50,13 +50,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-05-15 05:34:27 p. m.</div>
+    <div>2026-05-16 12:20:39 a. m.</div>
   </div>
 </div>
 
         <div class="nav-container">
           <div class="nav-item passed">
-            <a href="#[1:3]"><span>[1:3]</span> <span>Get users</span></a>
+            <a href="#[1:3]"><span>[1:3]</span> <span>Crear usuario exitosamente</span></a>
           </div>
         </div>
       </div>
@@ -65,8 +65,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
           <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
           <span class="feature-label">Feature:</span>
-          <span class="feature-path">features/users.feature</span><span class="feature-label">|</span>
-          <span class="feature-name">Users API</span>
+          <span class="feature-path">features/test.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Crear usuario</span>
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
@@ -77,12 +77,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
               <div class="scenario-keyword">
                 Scenario: <span>[1:3]</span>
-                <span class="scenario-name">Get users</span>
+                <span class="scenario-name">Crear usuario exitosamente</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1322</span>
+              <span>ms:</span>&nbsp;<span>7</span>
             </div>
           </div>
           
@@ -96,10 +96,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">4</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url &#39;https://serverest.dev/usuarios&#39;</span>
+        <span>Given</span>&nbsp;<span>print &#39;OK&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">7</div>
   </div>
 
    
@@ -108,98 +108,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.5">
-      <div class="step-ref passed">5</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method GET</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1321</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.5">17:34:26.137 request:
-1 &gt; GET https://serverest.dev/usuarios
-1 &gt; Host: serverest.dev
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.31)
-1 &gt; Accept-Encoding: gzip,deflate
-
-
-17:34:27.077 response time in milliseconds: 938
-1 &lt; 200
-1 &lt; access-control-allow-origin: *
-1 &lt; x-dns-prefetch-control: off
-1 &lt; x-frame-options: SAMEORIGIN
-1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
-1 &lt; x-download-options: noopen
-1 &lt; x-content-type-options: nosniff
-1 &lt; x-xss-protection: 1; mode=block
-1 &lt; content-type: application/json; charset=utf-8
-1 &lt; x-cloud-trace-context: ad77ea04daeee7ffb5e1ee5f4771c830;o=1
-1 &lt; date: Fri, 15 May 2026 22:37:14 GMT
-1 &lt; server: Google Frontend
-1 &lt; Content-Length: 253
-{
-    &quot;quantidade&quot;: 1,
-    &quot;usuarios&quot;: [
-        {
-            &quot;nome&quot;: &quot;Fulano da Silva&quot;,
-            &quot;email&quot;: &quot;fulano@qa.com&quot;,
-            &quot;password&quot;: &quot;teste&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;0uxuPY0cbmQhpEz1&quot;
-        }
-    ]
-}
-
+  <div class="preformatted" data-parent="0.4">00:20:39.007 [print] OK 
 </div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.6">
-      <div class="step-ref passed">6</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
 
   
 
