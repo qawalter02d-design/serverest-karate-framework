@@ -50,7 +50,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-05-16 06:56:53 a. m.</div>
+    <div>2026-05-16 08:37:36 a. m.</div>
   </div>
 </div>
 
@@ -82,7 +82,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>19513</span>
+              <span>ms:</span>&nbsp;<span>9781</span>
             </div>
           </div>
           <div class="step-row">
@@ -186,7 +186,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">9415</div>
+    <div class="time-cell passed">551</div>
   </div>
 
    
@@ -195,7 +195,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.12">06:56:34.308 request:
+  <div class="preformatted" data-parent="0.12">08:37:26.996 request:
 1 &gt; GET https://serverest.dev/usuarios
 1 &gt; Host: serverest.dev
 1 &gt; Connection: Keep-Alive
@@ -203,7 +203,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-06:56:43.718 response time in milliseconds: 9410
+08:37:27.545 response time in milliseconds: 549
 1 &lt; 200
 1 &lt; access-control-allow-origin: *
 1 &lt; x-dns-prefetch-control: off
@@ -213,12 +213,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; x-content-type-options: nosniff
 1 &lt; x-xss-protection: 1; mode=block
 1 &lt; content-type: application/json; charset=utf-8
-1 &lt; x-cloud-trace-context: 4c7b76a28e428ccb345ed9dbae8ffaa9
-1 &lt; date: Sat, 16 May 2026 11:59:30 GMT
+1 &lt; x-cloud-trace-context: e18dd3e021d036792a8069a1ed77bb63
+1 &lt; date: Sat, 16 May 2026 13:40:14 GMT
 1 &lt; server: Google Frontend
-1 &lt; Content-Length: 253
+1 &lt; Content-Length: 487
 {
-    &quot;quantidade&quot;: 1,
+    &quot;quantidade&quot;: 2,
     &quot;usuarios&quot;: [
         {
             &quot;nome&quot;: &quot;Fulano da Silva&quot;,
@@ -226,6 +226,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
             &quot;password&quot;: &quot;teste&quot;,
             &quot;administrador&quot;: &quot;true&quot;,
             &quot;_id&quot;: &quot;0uxuPY0cbmQhpEz1&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;QA User&quot;,
+            &quot;email&quot;: &quot;qa_911d5892-f3f5-4f50-b62d-fe4d90867650@mail.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;zkW6QnUBBUN9T5Ep&quot;
         }
     ]
 }
@@ -312,7 +319,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.usuarios == &#39;#array&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -365,7 +372,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def schema = read(&#39;classpath:schemas/getUsersSchema.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -393,7 +400,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match each response.usuarios == schema</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -474,7 +481,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">10093</div>
+    <div class="time-cell passed">9222</div>
   </div>
 
    
@@ -483,7 +490,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.30">06:56:43.724 request:
+  <div class="preformatted" data-parent="0.30">08:37:27.554 request:
 2 &gt; GET https://serverest.dev/usuarios-error
 2 &gt; Host: serverest.dev
 2 &gt; Connection: Keep-Alive
@@ -491,7 +498,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 2 &gt; Accept-Encoding: gzip,deflate
 
 
-06:56:53.807 response time in milliseconds: 10083
+08:37:36.773 response time in milliseconds: 9219
 2 &lt; 405
 2 &lt; access-control-allow-origin: *
 2 &lt; x-dns-prefetch-control: off
@@ -501,8 +508,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 2 &lt; x-content-type-options: nosniff
 2 &lt; x-xss-protection: 1; mode=block
 2 &lt; content-type: application/json; charset=utf-8
-2 &lt; x-cloud-trace-context: 18b93edd81ab4e9ba7e07c2757d8ebe3;o=1
-2 &lt; date: Sat, 16 May 2026 11:59:41 GMT
+2 &lt; x-cloud-trace-context: 474dc8c44429184c4463c87b3c25186c
+2 &lt; date: Sat, 16 May 2026 13:40:23 GMT
 2 &lt; server: Google Frontend
 2 &lt; Content-Length: 152
 {

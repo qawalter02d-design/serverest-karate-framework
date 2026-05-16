@@ -22,7 +22,7 @@ Scenario: Update user successfully
     * def userId = response._id
 
     # 2. Actualizar usuario creado
-    Given path '/usuarios', userId
+    Given path '/usuarios/' + userId
     And request
     """
     {

@@ -1,7 +1,7 @@
 Feature: Obtener usuario por ID
 
 Background:
-    Given url baseUrl
+    Given url 'https://serverest.dev'
 
 Scenario: Validar usuario por ID y errores
 
@@ -29,7 +29,7 @@ Scenario: Validar usuario por ID y errores
     # ======================
     # GET USUARIO OK
     # ======================
-    Given path '/usuarios', userId
+    Given path '/usuarios/' + userId
     When method GET
     Then status 200
     And match response._id == userId

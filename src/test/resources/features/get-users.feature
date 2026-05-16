@@ -1,7 +1,7 @@
 Feature: Listar usuarios
 
 Background:
-    Given url baseUrl
+    Given url baseUrl 
 
 Scenario: Listar usuarios y validar todo
 
