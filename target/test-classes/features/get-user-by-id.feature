@@ -1,7 +1,7 @@
 Feature: Obtener usuario por ID
 
 Background:
-    Given url 'https://serverest.dev'
+   Given url 'https://serverest.dev'
 
 Scenario: Validar usuario por ID y errores
 
