@@ -50,13 +50,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-05-16 08:37:04 a. m.</div>
+    <div>2026-05-16 07:03:41 p. m.</div>
   </div>
 </div>
 
         <div class="nav-container">
           <div class="nav-item passed">
-            <a href="#[1:3]"><span>[1:3]</span> <span>Crear un usuario exitosamente</span></a>
+            <a href="#[1:6]"><span>[1:6]</span> <span>Crear un usuario exitosamente</span></a>
           </div>
         </div>
       </div>
@@ -70,36 +70,42 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1:3]">
+          <div class="scenario-heading" id="[1:6]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1:3]</span>
+                Scenario: <span>[1:6]</span>
                 <span class="scenario-name">Crear un usuario exitosamente</span>
-                <span>Background:</span>
+                <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>3673</span>
+              <span>ms:</span>&nbsp;<span>1064</span>
             </div>
           </div>
-          
-          <div><div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.6">
-      <div class="step-ref passed">6</div>
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url baseUrl</span>
+        <span>Given</span>&nbsp;<span>url &#39;https://serverest.dev&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">56</div>
   </div>
 
    
@@ -124,63 +130,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">7</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>path &#39;/usuarios&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      
-      <div class="step-cell comment"># =========================</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
-
-  <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      
-      <div class="step-cell comment"># UTILIDAD (PUNTO 6)</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
-
-  <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      
-      <div class="step-cell comment"># =========================</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
-
-  <div class="step-row">
-    <div class="step-container" id="0.12">
-      <div class="step-ref passed">12</div>
-      
-      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def TestData = Java.type(&#39;utils.TestData&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">16</div>
+    <div class="time-cell passed">27</div>
   </div>
 
    
@@ -201,14 +154,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.13">
-      <div class="step-ref passed">13</div>
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def email = TestData.randomEmail()</span>
       </div>
     </div>
-    <div class="time-cell passed">98</div>
+    <div class="time-cell passed">90</div>
   </div>
 
    
@@ -226,47 +179,50 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <div><div>
   
 
-  <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      
-      <div class="step-cell comment"># =========================</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
+  
 
   <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
       
-      <div class="step-cell comment"># REQUEST</div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/usuarios&#39;</span>
+      </div>
     </div>
-    <div class="time-cell comment"></div>            
+    <div class="time-cell passed">0</div>
   </div>
 
-  <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      
-      <div class="step-cell comment"># =========================</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
 
   <div class="step-row">
-    <div class="step-container" id="0.18">
-      <div class="step-ref passed">18</div>
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>request</span>
       </div>
     </div>
-    <div class="time-cell passed">26</div>
+    <div class="time-cell passed">30</div>
   </div>
 
    
   
-  <div class="preformatted" data-parent="0.18">{
+  <div class="preformatted" data-parent="0.11">{
   &quot;nome&quot;: &quot;Usuario QA&quot;,
   &quot;email&quot;: &quot;#(email)&quot;,
   &quot;password&quot;: &quot;123456&quot;,
@@ -287,14 +243,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.28">
-      <div class="step-ref passed">28</div>
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
       
       <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">3507</div>
+    <div class="time-cell passed">831</div>
   </div>
 
    
@@ -303,7 +259,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.28">08:37:01.441 request:
+  <div class="preformatted" data-parent="0.20">19:03:41.122 request:
 1 &gt; POST https://serverest.dev/usuarios
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 123
@@ -311,9 +267,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.19)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;nome&quot;:&quot;Usuario QA&quot;,&quot;email&quot;:&quot;qa_1e616d5b-c87d-4a2a-87f4-ffe010b4011b@mail.com&quot;,&quot;password&quot;:&quot;123456&quot;,&quot;administrador&quot;:&quot;true&quot;}
+{&quot;nome&quot;:&quot;Usuario QA&quot;,&quot;email&quot;:&quot;qa_55c5e55b-faf8-4d8e-86cd-afd4fc79bd68@mail.com&quot;,&quot;password&quot;:&quot;123456&quot;,&quot;administrador&quot;:&quot;true&quot;}
 
-08:37:04.751 response time in milliseconds: 3308
+19:03:41.775 response time in milliseconds: 653
 1 &lt; 201
 1 &lt; access-control-allow-origin: *
 1 &lt; x-dns-prefetch-control: off
@@ -323,13 +279,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; x-content-type-options: nosniff
 1 &lt; x-xss-protection: 1; mode=block
 1 &lt; content-type: application/json; charset=utf-8
-1 &lt; x-cloud-trace-context: 34629c4a15e665e1fb484c72221847b9;o=1
-1 &lt; date: Sat, 16 May 2026 13:39:51 GMT
+1 &lt; x-cloud-trace-context: b2e3d90a9a73d9c8a74fa3ec2ed0ca59;o=1
+1 &lt; date: Sun, 17 May 2026 00:06:28 GMT
 1 &lt; server: Google Frontend
 1 &lt; Content-Length: 82
 {
     &quot;message&quot;: &quot;Cadastro realizado com sucesso&quot;,
-    &quot;_id&quot;: &quot;pKLrfADkeo8M96Jq&quot;
+    &quot;_id&quot;: &quot;jZWqgj59NFiIdveB&quot;
 }
 
 </div>   
@@ -344,8 +300,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.29">
-      <div class="step-ref passed">29</div>
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 201</span>
@@ -369,42 +325,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <div><div>
   
 
-  <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      
-      <div class="step-cell comment"># =========================</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
+  
 
   <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      
-      <div class="step-cell comment"># SCHEMA (PUNTO 4 - NO SE TOCA)</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
-
-  <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      
-      <div class="step-cell comment"># =========================</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
-
-  <div class="step-row">
-    <div class="step-container" id="0.34">
-      <div class="step-ref passed">34</div>
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def schema = read(&#39;classpath:schemas/createUserSchema.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">14</div>
+    <div class="time-cell passed">15</div>
   </div>
 
    
@@ -425,14 +356,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.35">
-      <div class="step-ref passed">35</div>
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response == schema</span>
       </div>
     </div>
-    <div class="time-cell passed">10</div>
+    <div class="time-cell passed">15</div>
   </div>
 
    

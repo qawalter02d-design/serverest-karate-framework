@@ -40,3 +40,5 @@ Scenario: Update user successfully
     # ================================
     * def schema = read('classpath:schemas/updateUserSchema.json')
     And match response == schema
+
+    

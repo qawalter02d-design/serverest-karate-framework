@@ -1,20 +1,13 @@
 Feature: Gestión de Usuarios en ServeRest
 
-Scenario: Crear un usuario exitosamente
-
 Background:
   Given url 'https://serverest.dev'
-  And path '/usuarios'
 
-  # =========================
-  # UTILIDAD (PUNTO 6)
-  # =========================
+Scenario: Crear un usuario exitosamente
   * def TestData = Java.type('utils.TestData')
   * def email = TestData.randomEmail()
 
-  # =========================
-  # REQUEST
-  # =========================
+  Given path '/usuarios'
   And request
   """
   {
@@ -24,12 +17,8 @@ Background:
     "administrador": "true"
   }
   """
-
   When method POST
   Then status 201
 
-  # =========================
-  # SCHEMA (PUNTO 4 - NO SE TOCA)
-  # =========================
   * def schema = read('classpath:schemas/createUserSchema.json')
   And match response == schema

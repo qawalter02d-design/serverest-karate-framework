@@ -1,2 +1,3 @@
 utils\DataGenerator.class
 runners\TestRunner.class
+utils\TestData.class
